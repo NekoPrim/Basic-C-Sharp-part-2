@@ -1,5 +1,5 @@
 ## Basic C# loops part 1
-Going back over old Prime Repos and redoing in C#.  This repo is for prime-pw-week-3-assignment-part-1.
+Going back over old Prime Repos and redoing in C# and .NET.  This repo is for prime-pw-week-3-assignment-part-1.
 
 ## Description
 - Loops for, while, for of

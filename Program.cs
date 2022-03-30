@@ -13,9 +13,9 @@ for (int i = 0; i < 4; i ++)
 
 // 1.a. TODO: Write a for loop to console.log the numbers from 0 to 5
 //   - Which part of the example loop do you need to change to do this?
-Console.Write("count from 0 to 5");
+Console.Write("count from 0 to 5.");
 
-for (i = 0; i < 6; i ++) 
+for (int i = 0; i < 6; i ++) 
 {
     Console.WriteLine(i);
 }
@@ -24,7 +24,7 @@ for (i = 0; i < 6; i ++)
 //   - Which part of the example loop do you need to change to do this?
 Console.WriteLine("count from 3 to 5");
 
-for (i = 3; i < 6; i ++) 
+for (int i = 3; i < 6; i ++) 
 {
     Console.WriteLine(i);
 }
@@ -33,7 +33,7 @@ for (i = 3; i < 6; i ++)
 //   - Which part of the example loop do you need to change to do this?
 Console.WriteLine("count even numbers from 2 to 10 (2, 4, 6, 8, 10):");
 
-for (i = 2; i < 11; i += 2) 
+for (int i = 2; i < 11; i += 2) 
 {
     Console.WriteLine(i);
 }
@@ -41,56 +41,62 @@ for (i = 2; i < 11; i += 2)
 // 1.d. (STRETCH) TODO: Write a for loop to do a counddown from 5 to 0
 Console.WriteLine("STRETCH: countdown from 5 to 0");
 
-for (i = 5; i >= 0; i --)
+for (int i = 5; i >= 0; i --)
 {
     Console.WriteLine(i);
 }
 
 // 2. For of loops
-// console.log('---- 2. For Of loop ----');
-// let stars = ['Polaris', 'Gacrux', 'Formalhaut', 'Rigel', 'Deneb'];
+Console.WriteLine("---- 2. For Of loop ----");
+string[] stars = 
+{
+    "Polaris", 
+    "Gacrux", 
+    "Formalhaut", 
+    "Rigel", 
+    "Deneb"
+};
 
-// 2.a. TODO: Write a for of loop to console.log each star in the 'stars' array
-// console.log('Some stars:');
+// 2.a. TODO: Write a foreach loop to console.log each star in the 'stars' array
+Console.WriteLine("Some stars:");
 
-// let star=0;
-
-// for (star of stars){
-//   console.log(star);
-// }
+foreach (string star in stars)
+{
+    Console.WriteLine(star);
+}
 
 // 3. While loops
-// console.log('---- 3. While loop ----');
+Console.WriteLine("---- 3. While loop ----");
 
 // 3.a. TODO: Write a while loop to console.log each star in the 'stars' array
-// console.log('Some stars using while:');
+Console.WriteLine("Some stars using while:");
 
-// i=0;
-// let length= stars.length;
+int x = 0;
 
-// while (i < length){
-//   console.log(stars[i]);
-//   i ++;
-// }
+while (x < stars.Length)
+{
+    Console.WriteLine(stars[x]);
+    x ++;
+}
 
 // 3.b. TODO: Write a while loop to console.log the numbers from 0 to 5
-// console.log('count from 0 to 5');
+Console.WriteLine("count from 0 to 5");
 
-// i=0;
-// const max=6;
+int y = 0;
 
-// while (i < max){
-//   console.log(i);
-//   i ++;
-// }
+while (y < 6)
+{
+    Console.WriteLine(y);
+    y ++;
+}
 
 // 3.c. TODO: Write a while loop to console.log the numbers from 10 to 5
-// console.log('count backwards from 10 to 5');
+Console.WriteLine("count backwards from 10 to 5");
 
-// i=10;
-// const min=4;
+int z = 10;
 
-// while (i > min){
-//   console.log(i);
-//   i --;
-// }
+while (z > 5)
+{
+    Console.WriteLine(z);
+    z --;
+}
