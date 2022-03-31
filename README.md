@@ -3,7 +3,7 @@
 - This repo is for prime-pw-week-3-assignment-part-1.
 
 ## Description
-- Loops for, while, for of
+- Loops for, while, foreach
 - Arrays
 
 _Provided Files_
